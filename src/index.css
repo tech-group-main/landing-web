@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tailwindcss-animated";
 @import "./components/Main/main.css";
 @import "./components/Contact/contact.css";
 

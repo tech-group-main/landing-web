@@ -81,8 +81,8 @@ export const Main: React.FC = () => {
         <div className='w-full h-[100] relative select-none'>
             <div className='max-w-[1440px] h-full flex flex-row py-44 m-auto'>
                 <div className='flex justify-between h-96 bg-blend-color flex-col gap-5'>
-                    <h1 className='text-[64px]/[1] w-3/4 font-light'>Ваше индивидуальное IT решение для бизнеса</h1>
-                    <div className='text-2xl flex flex-col mt-auto'>
+                    <h1 className='animate-fade-right animate-once animate-duration-800 animate-linear text-[64px]/[1] w-3/4 font-light'>Ваше индивидуальное IT решение для бизнеса</h1>
+                    <div className='text-2xl flex flex-col items-start w-fit'>
                         <p>IT автоматизация бизнеса</p>
                         <p>Работа в аутсорс</p>
                         <p>Лендинг</p>
