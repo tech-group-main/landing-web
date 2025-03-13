@@ -22,10 +22,10 @@ export const Navbar = () => {
 
                 <div className='hidden md:flex items-center gap-6'>
                     <ul className='flex cursor-pointer gap-6'>
-                        <li className='hover:text-[#c1c1c1]'><a>О компании</a></li>
-                        <li className='hover:text-[#c1c1c1]'><a>Разработка</a></li>
-                        <li className='hover:text-[#c1c1c1]'><a>Кейсы</a></li>
-                        <li className='hover:text-[#c1c1c1]'><a>Контакты</a></li>
+                        <li className='hover:text-[#c1c1c1]'><a href='#about'>О компании</a></li>
+                        <li className='hover:text-[#c1c1c1]'><a href='#services'>Услуги</a></li>
+                        <li className='hover:text-[#c1c1c1]'><a href='#cases'>Кейсы</a></li>
+                        <li className='hover:text-[#c1c1c1]'><a href='#contact'>Контакты</a></li>
                     </ul>
                     <div>
                         <button className='bg-[#5D8AD9] rounded-md px-8 py-3'>Заказать</button>
