@@ -2,11 +2,11 @@ export const Contact = () => {
     return (
         <div id='contact' className='w-full h-[100] relative select-none'>
             <div className='max-w-[1440px] h-full flex flex-row justify-between py-24 m-auto'>
-                <div className='w-2/4 h-full flex flex-col border rounded-[50px] p-24'>
+                <div className='w-2/4 h-full flex flex-col border rounded-[20px] p-20'>
                     <h1 className='text-6xl w-2/3'>Связаться с нами</h1>
-                    <form className='flex flex-col py-8 text-base leading-6 space-y-4 sm:text-lg sm:leading-7 mt-6'>
+                    <form className='flex flex-col py-8 text-base leading-6 space-y-4 sm:text-lg sm:leading-7 mt-6' autoComplete='one-time-code'>
                         <div className='input-box relative'>
-                            <input autoComplete="off"
+                            <input autoComplete="one-time-code"
                                    id="email"
                                    name="email"
                                    type="text"
@@ -18,7 +18,7 @@ export const Contact = () => {
                                 className='absolute left-0 -top-3.5 text-gray-100 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-300 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm'>Имя</label>
                         </div>
                         <div className='input-box relative mt-6'>
-                            <input autoComplete="off"
+                            <input autoComplete="one-time-code"
                                    id="email"
                                    name="email"
                                    type="text"
@@ -30,13 +30,14 @@ export const Contact = () => {
                                 className='absolute left-0 -top-3.5 text-gray-100 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-300 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm'>Электронная
                                 почта</label>
                         </div>
-
-                        <label className='uppercase'>Сообщение</label>
-                        <textarea placeholder='Сообщение'
-                                  className='w-full px-8 py-4 rounded-md border-2 border-gray-300 focus:outline-none focus:border-blue-500 h-60'
-                                  required/>
+                        <div className='mt-6 flex flex-col gap-5'>
+                            <label className='uppercase'>Сообщение</label>
+                            <textarea placeholder='Сообщение'
+                                      className='w-full px-8 resize-none py-4 rounded-md border-2 border-gray-300 focus:outline-none focus:border-blue-500 h-60'
+                                      required/>
+                        </div>
                         <button type='submit'
-                                className='w-full h-12 border text-white uppercase rounded-md place-self-center hover:bg-[#202020]'>Отправить
+                                className='w-full h-12 mt-6 text-white uppercase place-self-center  bg-[#5D8AD9] hover:bg-[#537dc7] hover:cursor-pointer rounded-md px-8'>Отправить
                         </button>
                     </form>
 
