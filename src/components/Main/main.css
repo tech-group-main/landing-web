@@ -1,0 +1,17 @@
+@theme {
+    --animate-glow: glow 3s infinite;
+
+    @keyframes glow {
+        0% {
+            filter: blur(20px);
+        }
+
+        50% {
+            filter: blur(50px);
+        }
+
+        100% {
+            filter: blur(20px);
+        }
+    }
+}
