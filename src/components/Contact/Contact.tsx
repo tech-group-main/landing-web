@@ -1,10 +1,27 @@
+import {useState} from "react";
+import * as React from "react";
+
+interface NotificationProps {
+    message: string;
+    show: boolean;
+}
+
 export const Contact = () => {
+    const [showNotification, setShowNotification] = useState(false);
+    const sendMessage = () => {
+
+        setShowNotification(true);
+
+        setTimeout(() => {
+            setShowNotification(false);
+        }, 3000);
+    };
     return (
         <div id='contact' className='w-full h-[100] relative select-none'>
             <div className='max-w-[1440px] h-full flex flex-row justify-between py-24 m-auto'>
                 <div className='w-2/4 h-full flex flex-col border rounded-[20px] p-20'>
                     <h1 className='text-6xl w-2/3'>Связаться с нами</h1>
-                    <form className='flex flex-col py-8 text-base leading-6 space-y-4 sm:text-lg sm:leading-7 mt-6' autoComplete='one-time-code'>
+                    <form className='flex flex-col py-8 text-base leading-6 space-y-4 sm:text-lg sm:leading-7 mt-6 relative' autoComplete='one-time-code'>
                         <div className='input-box relative'>
                             <input autoComplete="one-time-code"
                                    id="email"
@@ -37,9 +54,11 @@ export const Contact = () => {
                                       required/>
                         </div>
                         <button type='submit'
+                                onClick={sendMessage}
                                 className='w-full h-12 mt-6 text-white uppercase place-self-center  bg-[#5D8AD9] hover:bg-[#537dc7] hover:cursor-pointer rounded-md px-8'>Отправить
                         </button>
                     </form>
+                    <Notification message="Message sent successfully." show={showNotification} />
 
                 </div>
                 <div className='lg:block relative hidden'>
@@ -49,14 +68,34 @@ export const Contact = () => {
                         </svg>
                     </div>
                     <div className='relative'>
-                        <img className='' src='src/assets/cubes/cube4.png'/>
-
+                        <img className='' src='src/assets/cubes/cube4.png' alt='cube'/>
                     </div>
                     <div>
-                        <img className='' src='src/assets/cubes/cube5.png'/>
+                        <img className='' src='src/assets/cubes/cube5.png' alt='cube'/>
                     </div>
                 </div>
             </div>
         </div>
+    );
+};
+
+const Notification: React.FC<NotificationProps> = ({ message, show }) => {
+    return (
+        show && (
+            <div id="toast-simple"
+                 className="fixed z-10 top-10 right-10 flex items-center w-full max-w-xs p-4 space-x-4
+                    rtl:space-x-reverse text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200
+                    rounded-lg shadow-sm dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800
+                    animate-once animate-duration-[2000ms] animate-delay-500 animate-ease-in animate-alternate-reverse animate-fade-left
+                    "
+                 role="alert">
+                <svg className="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true"
+                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>
+                </svg>
+                <div className="ps-4 text-sm font-normal">{message}</div>
+            </div>
+        )
     );
 };
