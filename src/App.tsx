@@ -12,6 +12,7 @@ function App() {
             <Main/>
             <About/>
             <Services/>
+            <Case/>
             <Contact/>
             <Footer/>
         </div>
