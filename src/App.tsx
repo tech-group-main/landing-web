@@ -4,6 +4,7 @@ import {About} from "./components/About/About.tsx";
 import {Services} from "./components/Services/Services.tsx";
 import {Contact} from "./components/Contact/Contact.tsx";
 import {Footer} from "./components/Footer/Footer.tsx";
+import {Case} from "./components/Cases/Case.tsx";
 
 function App() {
     return (
