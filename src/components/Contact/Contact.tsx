@@ -19,7 +19,7 @@ export const Contact = () => {
     return (
         <div id='contact' className='w-full h-[100] relative select-none'>
             <div className='max-w-[1440px] h-full flex flex-row justify-between py-24 m-auto'>
-                <div className='w-2/4 h-full flex flex-col border rounded-[20px] p-20'>
+                <div className='w-2/4 h-full flex flex-col rounded-[20px] p-20'>
                     <h1 className='text-6xl w-2/3'>Связаться с нами</h1>
                     <form className='flex flex-col py-8 text-base leading-6 space-y-4 sm:text-lg sm:leading-7 mt-6 relative' autoComplete='one-time-code'>
                         <div className='input-box relative'>
@@ -27,7 +27,7 @@ export const Contact = () => {
                                    id="email"
                                    name="email"
                                    type="text"
-                                   className='peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-100 focus:outline-none focus:borer-rose-600'
+                                   className='peer placeholder-transparent h-10 w-full border-b-1 border-gray-300 text-gray-100 focus:outline-none focus:borer-rose-600'
                                    placeholder="Имя"
                                    required/>
                             <label
@@ -39,7 +39,7 @@ export const Contact = () => {
                                    id="email"
                                    name="email"
                                    type="text"
-                                   className='peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-100 focus:outline-none focus:borer-rose-600'
+                                   className='peer placeholder-transparent h-10 w-full border-b-1 border-gray-300 text-gray-100 focus:outline-none focus:borer-rose-600'
                                    placeholder="Email address"
                                    required/>
                             <label
@@ -50,7 +50,7 @@ export const Contact = () => {
                         <div className='mt-6 flex flex-col gap-5'>
                             <label className='uppercase'>Сообщение</label>
                             <textarea placeholder='Сообщение'
-                                      className='w-full px-8 resize-none py-4 rounded-md border-2 border-gray-300 focus:outline-none focus:border-blue-500 h-60'
+                                      className='w-full px-8 resize-none border rounded-md transition py-4 border-gray-300 focus:outline-none focus:border-blue-500 h-60'
                                       required/>
                         </div>
                         <button type='submit'
