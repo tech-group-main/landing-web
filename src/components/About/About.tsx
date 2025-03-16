@@ -2,7 +2,7 @@
     return (
         <div id='about' className='w-full h-[100] relative select-none'>
             <div className='max-w-[1440px] h-full flex flex-row justify-between py-24 m-auto'>
-                <div className='flex flex-col w-3/7 gap-20 rounded-[50px] p-10'>
+                <div className='flex flex-col w-3/7 gap-20 rounded-[50px] py-10'>
                     <h1 className='text-5xl'>О нас</h1>
                     <p className='text-balance font-light text-2xl'>
                         Google поддерживает и разрабатывает многочисленные интернет-сервисы и продукты.
