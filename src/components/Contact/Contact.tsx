@@ -19,7 +19,7 @@ export const Contact = () => {
     return (
         <div id='contact' className='w-full h-[100] relative select-none'>
             <div className='max-w-[1440px] h-full flex flex-row justify-between py-24 m-auto'>
-                <div className='w-2/4 h-full flex flex-col border rounded-[20px] p-20'>
+                <div className='w-2/4 h-full flex flex-col rounded-[20px] p-20'>
                     <h1 className='text-6xl w-2/3'>Связаться с нами</h1>
                     <form className='flex flex-col py-8 text-base leading-6 space-y-4 sm:text-lg sm:leading-7 mt-6 relative' autoComplete='one-time-code'>
                         <div className='input-box relative'>
