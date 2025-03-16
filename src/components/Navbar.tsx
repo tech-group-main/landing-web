@@ -27,9 +27,6 @@ export const Navbar = () => {
                         <li className='hover:text-[#c1c1c1]'><a href='#case'>Кейсы</a></li>
                         <li className='hover:text-[#c1c1c1]'><a href='#contact'>Контакты</a></li>
                     </ul>
-                    <div>
-                        <button className='bg-[#5D8AD9] rounded-md px-8 py-3'>Заказать</button>
-                    </div>
                 </div>
                 <div className='md:hidden' onClick={toggleMenu}>
                     {

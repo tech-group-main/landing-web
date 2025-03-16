@@ -87,9 +87,9 @@ export const Case = () => {
                             className='project-image rounded-2xl'
                             alt='project'
                         />
-                        <div className='h-full bg-[#131313]'>
+                        <div className='h-full'>
                             <div
-                                className='project-title flex flex-col p-12 rounded-2xl gap-10 bg-[#1c1c1c] project-info'>
+                                className='project-title flex flex-col p-12 rounded-2xl gap-10 project-info'>
                                 <h1 className='text-4xl'>Разработка и сопровождение проекта</h1>
                                 <div className='text-lg flex flex-row gap-2 flex-wrap'>
                                     <span
@@ -118,7 +118,7 @@ export const Case = () => {
                             alt='project'
                         />
                         <div
-                            className='project-card absolute w-full bottom-0 left-0 bg-[#1c1c1c] p-2 text-lg flex flex-row gap-2 flex-wrap rounded-b-lg'>
+                            className='project-card absolute w-full bottom-0 left-0 p-2 text-lg flex flex-row gap-2 flex-wrap rounded-b-lg'>
                             <span
                                 className="bg-[#131313] inline-flex gap-1 text-primary py-1 px-4 rounded-lg items-center justify-between text-xs capitalize hover:bg-gray-gray1">
                                 <img
@@ -169,7 +169,7 @@ export const Case = () => {
                             alt='project'
                         />
                         <div
-                            className='project-title w-1/3 flex flex-col items-center p-12 rounded-2xl gap-10 bg-[#1c1c1c] project-info'>
+                            className='project-title w-1/3 flex flex-col items-center p-12 rounded-2xl gap-10 project-info'>
                             <h1 className='text-5xl'>Разработка и сопровождение проекта</h1>
                             <div className='text-lg flex flex-row gap-2 flex-wrap'>
                                 <span
