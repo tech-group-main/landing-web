@@ -12,7 +12,7 @@ export default defineConfig({
         svgLoader()],
     server: {
         host: true,
-        strictPort: true,
+        port: 3000,
         watch: {
             usePolling: true,
         },
