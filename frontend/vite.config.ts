@@ -10,4 +10,11 @@ export default defineConfig({
         react(),
         tailwindcss(),
         svgLoader()],
+    server: {
+        host: true,
+        strictPort: true,
+        watch: {
+            usePolling: true,
+        },
+    }
 })

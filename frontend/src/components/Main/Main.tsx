@@ -78,11 +78,13 @@ export const Main: React.FC = () => {
     }, []);
 
     return (
-        <div className='w-full h-[100] relative select-none'>
-            <div className='max-w-[1440px] h-full flex flex-row py-44 m-auto'>
-                <div className='flex justify-between h-96 bg-blend-color flex-col gap-5'>
-                    <h1 className='animate-fade-right animate-once animate-duration-800 animate-linear text-[64px]/[1] w-3/4 font-light'>Ваше индивидуальное IT решение для бизнеса</h1>
-                    <div className='text-2xl flex flex-col items-start w-fit'>
+        <div className='w-full h-full relative select-none'>
+            <div className='md:max-w-[1280px] max-md:px-2 max-w-[600px] h-full flex flex-row py-44 m-auto'>
+                <div className='flex justify-between md:h-100 h-60 bg-blend-color flex-col gap-5'>
+                    <h1 className='animate-fade-right animate-once animate-duration-800 animate-linear md:text-[64px]/[1] text-4xl md:w-3/4 font-light'>
+                        Ваше индивидуальное IT решение для бизнеса
+                    </h1>
+                    <div className='md:text-2xl text-lg flex flex-col items-start w-fit'>
                         <p>IT автоматизация бизнеса</p>
                         <p>Работа в аутсорс</p>
                         <p>Лендинг</p>
